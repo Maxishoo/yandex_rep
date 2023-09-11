@@ -45,3 +45,13 @@ print(f'Итого:', f"{str(wh*pr)+'руб':>28}")
 print(f'Внесено:', f"{str(mn)+'руб':>26}")
 print(f'Сдача:', f"{str(mn-wh*pr)+'руб':>28}")
 print('===================================')
+
+
+n = int(input())
+m = int(input())
+k1 = int(input())
+k2 = int(input())
+
+y = (n * k1 - n * m) // (k1 - k2)
+x = n - y
+print(x, y)
