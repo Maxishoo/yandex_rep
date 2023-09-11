@@ -30,3 +30,18 @@ b = int(input())
 c = int(input())
 d=(abs(a-b)/c)
 print(f"{d:.{2}f}")
+
+
+nm = input()
+pr = int(input())
+wh = int(input())
+mn = int(input())
+
+st = str(wh) + "кг" + ' * ' + str(pr) + 'руб/кг'
+print("================Чек================")
+print(f'Товар:', f"{nm:>28}")
+print(f'Цена:', f"{st:>29}")
+print(f'Итого:', f"{str(wh*pr)+'руб':>28}")
+print(f'Внесено:', f"{str(mn)+'руб':>26}")
+print(f'Сдача:', f"{str(mn-wh*pr)+'руб':>28}")
+print('===================================')
