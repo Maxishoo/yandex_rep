@@ -1,10 +1,16 @@
-nm = input()
-pr = int(input())
-wh = int(input())
-mn = int(input())
+a = int(input())
+b = int(input())
 
-print("Чек")
-print(nm, '-', str(wh) + 'кг', '-', str(pr) + 'руб/кг')
-print('Итого:', str(pr * wh) + 'руб')
-print('Внесено:', str(mn) + 'руб')
-print('Сдача:', str(mn - pr * wh) + 'руб')
+mi = min(a, b)
+ma = max(a, b)
+c = 0
+i = 0
+while ma > 0:
+    if mi > 0:
+        c += (ma % 10 + mi % 10) % 10 * 10 ** i
+        mi = mi // 10
+    else:
+        c += ma % 10 * 10 ** i
+    ma = ma // 10
+    i += 1
+print(c)
