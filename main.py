@@ -1,1 +1,1 @@
-print(int(input())-95)
+print("hello worl")
