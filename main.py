@@ -55,3 +55,27 @@ k2 = int(input())
 y = (n * k1 - n * m) // (k1 - k2)
 x = n - y
 print(x, y)
+
+
+###################################################
+a = float(input())
+b = float(input())
+c = float(input())
+
+d = b ** 2 - 4 * a * c
+if a == 0:
+    if b == 0 and c == 0:
+        print("Infinite solutions")
+    elif b == 0 and c != 0:
+        print("No solution")
+    elif b != 0:
+        x = -1 * c / b
+else:
+    if d < 0:
+        print("No solution")
+    elif d == 0:
+        print(f"{(-1 * b) / (2 * a):.2f}")
+    elif d > 0:
+        x1 = (-1 * b + d ** 0.5) / (2 * a)
+        x2 = (-1 * b - d ** 0.5) / (2 * a)
+        print(f"{min(x1, x2):.2f}", f"{max(x1, x2):.2f}")
