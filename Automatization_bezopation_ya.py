@@ -1,3 +1,4 @@
+x = float(input())
 y = float(input())
 
 if x ** 2 + y ** 2 <= 10 ** 2:
