@@ -1,12 +1,12 @@
-c = int(input())
-d = int(input())
-nod = 1
-a = max(c,d)
-b = min(c,d)
+a = int(input())
+b = int(input())
+ma = max(a, b)
+mi = min(a, b)
 
-while b!=0:
-    #a, b = b, a % b
-    c = a
-    a = b
-    b = c % b
-print(a)
+nok = ma
+while 1:
+    if nok % ma == 0 and nok % mi == 0:
+        print(nok)
+        break
+    else:
+        nok += 1
