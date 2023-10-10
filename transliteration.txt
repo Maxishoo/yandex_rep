@@ -1,2 +1,5 @@
-Privet liubimaia Alina
-Ia tebia mega liuldbliu
+# Содержимое файла first.txt
+очень плохо форматированный текст
+ну ну
+прямо
+очень-очень
